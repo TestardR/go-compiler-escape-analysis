@@ -52,5 +52,3 @@ func fillSliceWithIndex() []*bigStruct {
 
 	return data
 }
-
-func main() {}
