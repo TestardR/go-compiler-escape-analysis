@@ -14,7 +14,7 @@ type bigStruct struct {
 }
 
 // moved to heap: element
-// make([]*bigStruct, numberOfItems) escapes to heap
+// make([]*bigStruct, 0, numberOfItems) escapes to heap
 //
 //go:noinline
 func fillSliceWithAppend() []*bigStruct {
@@ -34,7 +34,7 @@ func fillSliceWithAppend() []*bigStruct {
 }
 
 // moved to heap: element
-// make([]*bigStruct, 0, numberOfItems) escapes to heap
+// make([]*bigStruct, numberOfItems) escapes to heap
 //
 //go:noinline
 func fillSliceWithIndex() []*bigStruct {

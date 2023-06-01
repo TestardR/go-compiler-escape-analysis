@@ -5,7 +5,7 @@ import (
 )
 
 // Stack with pointers
-// Sharing gown typically stays on the stack
+// Sharing down typically stays on the stack
 
 func main2() {
 	n := 4
