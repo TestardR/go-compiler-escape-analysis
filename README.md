@@ -1,6 +1,6 @@
 **When does the Go compiler place variables on the heap and the stack ?**
 
-- Sharing gown typically stays on the stack 
+- Sharing down typically stays on the stack 
   - Passing references down as function parameters
 - Sharing up typically escapes to the heap
   - Returning references (pointers) from functions 
